@@ -29,3 +29,7 @@ git log
 git reset --hard iddocommit
 
 git reset --hard head~1 (volta uma versao, ~2 volta duas versoes...)
+
+--git clone endereço do repositorio
+--git remote (o proprio github gera esse comando quando recriamos o repositorio)
+--git -u origin main
