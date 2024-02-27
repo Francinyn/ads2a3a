@@ -4,7 +4,7 @@ git init
 --comando para atualizar o nome do usuário (Não é o mesmo do github)
 git config --global user.name "Francinyn"
 
---comando para atualizar o email do usuário (Não é o mesmo do github)
+--comando para atualizar o email do usuário (Não é o mesmo do github) 
 git config --global user.email "francinyn@hotmail.com"
 
 -- alterar branch master para main
