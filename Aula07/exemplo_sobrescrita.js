@@ -10,9 +10,9 @@ class Funcionario{
     get Salario() {return this.Salario;}
     set Salario(pSalario) {return this.salario = pSalario;}
 
-    calcularSalario(){
+        calcularSalario(){
 
-    }
+        }
 }
 
 class Vendedor extends Funcionario{
@@ -29,5 +29,23 @@ class Vendedor extends Funcionario{
     }
 }
 
+class OperadorCaixa extends Funcionario{
+    constructor(pNome, pSalario, pBonus){
+        super(pNome, pSalario);
+        this.Bonus = pBonus;
+    }
+
+    get Bonus() {return this.Bonus;}
+    set Bonus(pBonus) {return this.bonus = pBonus;}
+
+    calcularSalario(){
+        return this.salario + this.bonus;
+    }
+}
+
+
 var vendedor = new Vendedor("Francinyn", 1600, 400);
 cosole.log(vendedor.calcularSalario());
+
+var opcaixa = new OperadorCaixa("Larissa", 1400, 100);
+console.log(opcaixa.calcularSalario());
