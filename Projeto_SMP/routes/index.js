@@ -13,4 +13,9 @@ router.get('/sobre',(req, res)=>{
     res.send('Página sobre o projeto');
 });
 
+router.get('/post/:id',(req, res)=>{
+    let id = req.params.id;
+    res.send('ID do post: ' + id);
+});
+
 module.exports = router;
